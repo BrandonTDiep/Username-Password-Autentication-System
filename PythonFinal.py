@@ -1,9 +1,9 @@
 import PySimpleGUI as sg
 import sqlite3
 
-con = sqlite3.connect('login.db') #***MAKE SURE TO COMMENT THIS OUT AFTER FIRST TEST RUN***
+con = sqlite3.connect('login.db') #***MAKE SURE TO COMMENT THIS OUT AFTER FIRST TEST RUN or will get error***
 
-#con = sqlite3.connect(':memory:')  #***MAKE SURE TO UNCOMMENT THIS OUT AFTER FIRST TEST RUN***
+#con = sqlite3.connect(':memory:')  #***MAKE SURE TO UNCOMMENT THIS OUT AFTER FIRST TEST RUN to fix error***
 cur = con.cursor() 
 
 cur.execute("""CREATE TABLE login
