@@ -29,6 +29,7 @@ def deleteAccount(value):
         event1, value1 = window.read()
         if event1 == "Yes":
             con.execute("DELETE from login where Username = ? and Password = ?", (value[0], value[1]))
+            con.commit()
             sg.popup("Account has been deleted")
             break
         if event1 == sg.WIN_CLOSED or event1 == 'No':
