@@ -2,10 +2,10 @@
 import PySimpleGUI as sg
 import sqlite3
 
-con = sqlite3.connect('login.db') #***MAKE SURE TO COMMENT THIS OUT AFTER FIRST TEST RUN or will get error***
+con = sqlite3.connect('login.db') 
 cur = con.cursor() 
 
-#Comment this section out with ''' after first test run to avoid any errors
+#Comment this section out with ''' after first test run/database is created to avoid any errors
 cur.execute("""CREATE TABLE login
 (Username text, Password text)""")
 
@@ -14,7 +14,7 @@ cur.execute("INSERT INTO login VALUES ('james','password123')")
 cur.execute("INSERT INTO login VALUES ('german','potato')")
 
 con.commit()
-#Comment this section out with ''' after first test run to avoid any errors
+#Comment this section out with ''' after first test run/database is created to avoid any errors
 
 
 def deleteAccount(value):
