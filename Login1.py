@@ -1,3 +1,4 @@
+#This version creates a temporary databse
 import PySimpleGUI as sg
 import sqlite3
 
