@@ -1,3 +1,4 @@
+#This version has one continuous database after each run
 import PySimpleGUI as sg
 import sqlite3
 
