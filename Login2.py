@@ -106,7 +106,7 @@ def createAccount(data):
                 else:
                     exist = True
                     continue
-            if exist != False:
+            if exist == True:
                 cur.execute("INSERT INTO login VALUES (?, ?)", (value[0], value[1]))
                 con.commit()
                 data.append((value[0], value[1]))
