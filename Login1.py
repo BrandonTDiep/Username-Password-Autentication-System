@@ -99,7 +99,7 @@ def createAccount(data):
         event, value = window.read()
         if event == "Enter":
             for row in data:
-                if value[0] in row[0]:
+                if value[0] == row[0]:
                     return_statement.update(value = "Username already exist")
                     exist = False
                     break
