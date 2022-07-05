@@ -78,7 +78,7 @@ def forgotPassword(data, value, return_statement):
         return_statement.update(value= "Enter your username to retrieve your passsword") 
     else:
         for row in data:
-            if value[0] in row[0]:
+            if value[0] == row[0]:
                 return_statement.update(value = row[1]) 
                 break             
             else:
