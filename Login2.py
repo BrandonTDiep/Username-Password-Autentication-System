@@ -29,7 +29,7 @@ def deleteAccount(value):
     while True:
         event1, value1 = window.read()
         if event1 == "Yes":
-            con.execute("DELETE from login where Username = ? and Password = ?", (value[0], value[1]))
+            con.execute("DELETE from login WHERE Username = ? and Password = ?", (value[0], value[1]))
             con.commit()
             sg.popup("Account has been deleted")
             break
@@ -63,7 +63,7 @@ def changePassword(value):
                 return_statement.update(value="Your new passwords do not match")
                 continue
             else:
-                cur.execute("UPDATE login SET password = ? where Username = ?", (value1[1], value[0]))
+                cur.execute("UPDATE login SET password = ? WHERE Username = ?", (value1[1], value[0]))
                 con.commit() 
                 sg.popup("Your password has been changed!")
                 return_statement.update(value="Your password has been changed!")
