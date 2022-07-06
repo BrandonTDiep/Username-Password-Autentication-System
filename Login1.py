@@ -164,8 +164,7 @@ def main():
         cursorS = con.execute("SELECT * from login") 
         data = cursorS.fetchall()
         
-        cursorS = con.execute("SELECT ?, ? from login", (value[0], value[1])) 
-        loginInfo = cursorS.fetchone()
+        loginInfo =  (value[0], value[1])
 
         if event == sg.WIN_CLOSED or event == "Exit":
             break
