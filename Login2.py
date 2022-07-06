@@ -5,16 +5,17 @@ import sqlite3
 con = sqlite3.connect('login.db') 
 cur = con.cursor() 
 
-#Comment this section out with ''' after first test run/database is created to avoid any errors
-cur.execute("""CREATE TABLE login
-(Username text, Password text)""")
+table = cur.execute("SELECT name FROM sqlite_master WHERE type='table' AND name = 'login' ").fetchall()
 
-cur.execute("INSERT INTO login VALUES ('jack','wordpass')")
-cur.execute("INSERT INTO login VALUES ('james','password123')")
-cur.execute("INSERT INTO login VALUES ('german','potato')")
-
-con.commit()
-#Comment this section out with ''' after first test run/database is created to avoid any errors
+if table == []:
+    cur.execute("""CREATE TABLE login
+    (Username text, Password text)""")
+    
+    cur.execute("INSERT INTO login VALUES ('jack','wordpass')")
+    cur.execute("INSERT INTO login VALUES ('james','password123')")
+    cur.execute("INSERT INTO login VALUES ('german','potato')")
+    
+    con.commit()
 
 
 def deleteAccount(value):
