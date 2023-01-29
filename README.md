@@ -5,7 +5,7 @@ This projects represents a user-friendly database management system that allows 
 
 **Tech used:** Python
 
-This project was built with mainly Python. To store user's information, sqlite3 was used as the database. PySimpleGUI created the username/password autentication system interface.
+This project was built with Python. To store user's information, sqlite3 was used as the database. PySimpleGUI created the username/password autentication system interface.
 
 ## Lessons Learned:
 
