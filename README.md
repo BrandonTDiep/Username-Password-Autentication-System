@@ -1,8 +1,5 @@
 # Username-Password-Autentication-System
 This projects represents a user-friendly database management system that allows user to enter their username/password, create/delete an account, and change their password. 
-**Link to project:** http://recruiters-love-seeing-live-demos.com/
-
-![alt tag](http://placecorgi.com/1200/650)
 
 ## How It's Made:
 
