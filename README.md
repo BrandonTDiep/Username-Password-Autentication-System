@@ -1,19 +1,19 @@
-My Awesome Project
-Write a short sentence or two about this project and what it does. Be sure to include a link and a screenshot (we're front end devs so we can actually see our work!).
+# Username-Password-Autentication-System
+This projects represents a user-friendly database management system that allows user to enter their username/password, create/delete an account, and change their password. 
+**Link to project:** http://recruiters-love-seeing-live-demos.com/
 
-Link to project: http://recruiters-love-seeing-live-demos.com/
+![alt tag](http://placecorgi.com/1200/650)
 
-alt tag
+## How It's Made:
 
-How It's Made:
-Tech used: HTML, CSS, JavaScript, Framework of choice
+**Tech used:** Python
 
-Here's where you can go to town on how you actually built this thing. Write as much as you can here, it's totally fine if it's not too much just make sure you write something. If you don't have too much experience on your resume working on the front end that's totally fine. This is where you can really show off your passion and make up for that ten fold.
+This project was built with mainly Python. To store user's information, sqlite3 was used as the database. PySimpleGUI created the username/password autentication system interface.
 
-Optimizations
-(optional)
+## Lessons Learned:
 
-You don't have to include this section but interviewers love that you can not only deliver a final product that looks great but also functions efficiently. Did you write something then refactor it later and the result was 5x faster than the original implementation? Did you cache your assets? Things that you write in this section are GREAT to bring up in interviews and you can use this section as reference when studying for technical interviews!
+Learned how to create a database and a user interface using Python.
 
-Lessons Learned:
-No matter what your experience level, being an engineer means continuously learning. Every time you build something you always have those whoa this is awesome or fuck yeah I did it! moments. This is where you should share those moments! Recruiters and interviewers love to see that you're self-aware and passionate about growing.
+
+
+
